@@ -97,7 +97,7 @@ input{
 	color: purple;
 }
 /* Específico para alguns inputs*/
-input[type=text], input[type=email], input[type=tel], select, textarea{
+input[type=text], input[type=email], input[type=tel], input[type=password], select, textarea{
 	width: 100%;
 	padding: 12px;
 	border: 1px solid #ccc;
