@@ -96,13 +96,28 @@
 				</div>
 				<div class="row">
 					<div class="label">
+						<label>Tipo Pessoa:</label>
+					</div>
+					<div class="input">
+						<input type="radio" id="tpCPF" name="tpPessoa" 
+						onclick="document.getElementById('divCNPJ').style.visibility='hidden';
+						document.getElementById('divCPF').style.visibility='visible'"/>
+						CPF
+						<input type="radio" id="tpCNPJ" name="tpPessoa" 
+						onclick="document.getElementById('divCNPJ').style.visibility='visible';
+						document.getElementById('divCPF').style.visibility='hidden'"/>
+						CNPJ
+					</div>
+				</div>
+				<div class="row" id="divCPF" style="visibility: hidden">
+					<div class="label">
 						<label>CPF:</label>
 					</div>
 					<div class="input">
 						<input type="text" id="cpf" name="cpf"/>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row" id="divCNPJ" style="visibility: hidden">
 					<div class="label">
 						<label>CNPJ:</label>
 					</div>
